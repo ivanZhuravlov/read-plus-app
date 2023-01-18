@@ -1,0 +1,47 @@
+@import "./assets/scss/theme.scss";
+
+.sign-in-form-wrp {
+  @media screen and (max-width: 1200px) {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sign-in-logo-subtitle {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: $primary;
+  }
+
+  .language-dropdown-sign-in {
+    position: absolute;
+    padding: 0 48px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 16px;
+    }
+
+    .btn.header-item {
+      padding: 0;
+
+      & > img {
+        height: 25px;
+      }
+    }
+  }
+}
+
+// for logo
+.navbar-brand-box {
+  &.small-padding {
+    padding: 0 12.5px !important;
+  }
+}
